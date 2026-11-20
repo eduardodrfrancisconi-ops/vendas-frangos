@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="css/frangos.css">
+</head>
+<body>
+    <header>
+        <h1>Vendas de Frangos<h1>
+    </header>
+    <section>
+        <p>Estoque de frangos </p>
+        <input type="number" id="estoque" name="estoque" placeholder="Qual o estoque">
+        <button id="Bdefinir">Definir</button> <!--definirEstoque(), e assim por diante-->
+        <br>
+        <br>
+        <div id="res" >
+        <br>
+        <br>
+        </div>
+        <br>
+        <br>
+        <p>Vendas => pedidos</p>
+        <div>
+            <input type="text" id="nome" name="nome" placeholder="Nome">
+            <input type="number" id="pedido" name="pedido" placeholder="Pedido frangos">
+            <button id="Badicionar">Adicionar</button>
+            <br>
+            <br>
+            <select name="slista" id="slista" size="6">
+
+            </select>
+            <br>
+            <br>
+            <button id="Bselecionar">Selecionar Pedido</button>
+            <span> => </span>
+            <button id="Balterar">Alterar Pedido</button>
+            <span> ou </span>
+            <button id="Bexcluir">Excluir Pedido</button>
+            <br>
+            <br>
+            <button id="Bbackup">Baixar backup</button> 
+            <button id="Brestaurar">Restaurar backup</button>
+            <input type="file" id="arquivoBackup" accept=".json" hidden>
+        </div>
+        
+    </section>
+    <footer>
+        <p>&copy; EC</p>
+    </footer>
+    <script type="module" src="main.js"></script>
+</body>
+</html> 
